@@ -1,0 +1,29 @@
+.DS_Store
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+
+# Build output
+build/
+.build/
+DerivedData/
+*.dSYM
+*.dSYM.zip
+
+# Signing material must remain outside source control
+*.key
+*.pem
+*.p8
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+Secrets.xcconfig
+*.secrets.xcconfig

@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000001 /* APMExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000101 /* APMExplorerApp.swift */; };
+		A00000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000102 /* ContentView.swift */; };
+		A00000000000000000000003 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000105 /* AppDependencies.swift */; };
+		A00000000000000000000004 /* OSLogFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000106 /* OSLogFacade.swift */; };
+		A00000000000000000000005 /* APMXCore in Frameworks */ = {isa = PBXBuildFile; productRef = A00000000000000000000802 /* APMXCore */; };
+		A00000000000000000000006 /* AppDependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000107 /* AppDependenciesTests.swift */; };
+		A00000000000000000000007 /* APMXCore in Frameworks */ = {isa = PBXBuildFile; productRef = A00000000000000000000803 /* APMXCore */; };
+		A00000000000000000000008 /* APMExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000108 /* APMExplorerUITests.swift */; };
+		A00000000000000000000009 /* PassiveInputCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000111 /* PassiveInputCapture.swift */; };
+		A00000000000000000000010 /* InputMonitoringPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000112 /* InputMonitoringPermissionService.swift */; };
+		A00000000000000000000011 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000113 /* Settings.swift */; };
+		A00000000000000000000012 /* PrivacySummary.md in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000114 /* PrivacySummary.md */; };
+		A00000000000000000000013 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000115 /* AnalyticsView.swift */; };
+		A00000000000000000000014 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000116 /* PrivacyView.swift */; };
+		A00000000000000000000015 /* AboutFAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000117 /* AboutFAQView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000000701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000401;
+			remoteInfo = APMExplorer;
+		};
+		A00000000000000000000702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000401;
+			remoteInfo = APMExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000101 /* APMExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APMExplorerApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00000000000000000000103 /* APMExplorer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APMExplorer.entitlements; sourceTree = "<group>"; };
+		A00000000000000000000104 /* APM Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APM Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000105 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		A00000000000000000000106 /* OSLogFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogFacade.swift; sourceTree = "<group>"; };
+		A00000000000000000000107 /* AppDependenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000108 /* APMExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APMExplorerUITests.swift; sourceTree = "<group>"; };
+		A00000000000000000000109 /* APMExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APMExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000110 /* APMExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APMExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000111 /* PassiveInputCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassiveInputCapture.swift; sourceTree = "<group>"; };
+		A00000000000000000000112 /* InputMonitoringPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMonitoringPermissionService.swift; sourceTree = "<group>"; };
+		A00000000000000000000113 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A00000000000000000000114 /* PrivacySummary.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PrivacySummary.md; sourceTree = "<group>"; };
+		A00000000000000000000115 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		A00000000000000000000116 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		A00000000000000000000117 /* AboutFAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFAQView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000005 /* APMXCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000007 /* APMXCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000201 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000202 /* APMExplorer */,
+				A00000000000000000000204 /* APMExplorerTests */,
+				A00000000000000000000205 /* APMExplorerUITests */,
+				A00000000000000000000203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000202 /* APMExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000101 /* APMExplorerApp.swift */,
+				A00000000000000000000105 /* AppDependencies.swift */,
+				A00000000000000000000106 /* OSLogFacade.swift */,
+				A00000000000000000000111 /* PassiveInputCapture.swift */,
+				A00000000000000000000112 /* InputMonitoringPermissionService.swift */,
+				A00000000000000000000113 /* Settings.swift */,
+				A00000000000000000000102 /* ContentView.swift */,
+				A00000000000000000000115 /* AnalyticsView.swift */,
+				A00000000000000000000116 /* PrivacyView.swift */,
+				A00000000000000000000117 /* AboutFAQView.swift */,
+				A00000000000000000000114 /* PrivacySummary.md */,
+				A00000000000000000000103 /* APMExplorer.entitlements */,
+			);
+			path = APMExplorer;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000104 /* APM Explorer.app */,
+				A00000000000000000000109 /* APMExplorerTests.xctest */,
+				A00000000000000000000110 /* APMExplorerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000204 /* APMExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000107 /* AppDependenciesTests.swift */,
+			);
+			path = APMExplorerTests;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000205 /* APMExplorerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000108 /* APMExplorerUITests.swift */,
+			);
+			path = APMExplorerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000401 /* APMExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000602 /* Build configuration list for PBXNativeTarget "APMExplorer" */;
+			buildPhases = (
+				A00000000000000000000301 /* Sources */,
+				A00000000000000000000302 /* Frameworks */,
+				A00000000000000000000303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APMExplorer;
+			packageProductDependencies = (
+				A00000000000000000000802 /* APMXCore */,
+			);
+			productName = APMExplorer;
+			productReference = A00000000000000000000104 /* APM Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000403 /* APMExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000603 /* Build configuration list for PBXNativeTarget "APMExplorerTests" */;
+			buildPhases = (
+				A00000000000000000000304 /* Sources */,
+				A00000000000000000000305 /* Frameworks */,
+				A00000000000000000000306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000703 /* PBXTargetDependency */,
+			);
+			name = APMExplorerTests;
+			packageProductDependencies = (
+				A00000000000000000000803 /* APMXCore */,
+			);
+			productName = APMExplorerTests;
+			productReference = A00000000000000000000109 /* APMExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A00000000000000000000404 /* APMExplorerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000604 /* Build configuration list for PBXNativeTarget "APMExplorerUITests" */;
+			buildPhases = (
+				A00000000000000000000307 /* Sources */,
+				A00000000000000000000308 /* Frameworks */,
+				A00000000000000000000309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000704 /* PBXTargetDependency */,
+			);
+			name = APMExplorerUITests;
+			packageProductDependencies = (
+			);
+			productName = APMExplorerUITests;
+			productReference = A00000000000000000000110 /* APMExplorerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					A00000000000000000000401 = {
+						CreatedOnToolsVersion = 26.6;
+						ProvisioningStyle = Automatic;
+					};
+					A00000000000000000000403 = {
+						CreatedOnToolsVersion = 26.6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A00000000000000000000401;
+					};
+					A00000000000000000000404 = {
+						CreatedOnToolsVersion = 26.6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A00000000000000000000401;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000601 /* Build configuration list for PBXProject "APMExplorer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000201;
+			packageReferences = (
+				A00000000000000000000801 /* XCLocalSwiftPackageReference "APMXCore" */,
+			);
+			productRefGroup = A00000000000000000000203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000401 /* APMExplorer */,
+				A00000000000000000000403 /* APMExplorerTests */,
+				A00000000000000000000404 /* APMExplorerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000012 /* PrivacySummary.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000002 /* ContentView.swift in Sources */,
+				A00000000000000000000003 /* AppDependencies.swift in Sources */,
+				A00000000000000000000004 /* OSLogFacade.swift in Sources */,
+				A00000000000000000000009 /* PassiveInputCapture.swift in Sources */,
+				A00000000000000000000010 /* InputMonitoringPermissionService.swift in Sources */,
+				A00000000000000000000011 /* Settings.swift in Sources */,
+				A00000000000000000000013 /* AnalyticsView.swift in Sources */,
+				A00000000000000000000014 /* PrivacyView.swift in Sources */,
+				A00000000000000000000015 /* AboutFAQView.swift in Sources */,
+				A00000000000000000000001 /* APMExplorerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000006 /* AppDependenciesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000008 /* APMExplorerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A00000000000000000000703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000401 /* APMExplorer */;
+			targetProxy = A00000000000000000000701 /* PBXContainerItemProxy */;
+		};
+		A00000000000000000000704 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000401 /* APMExplorer */;
+			targetProxy = A00000000000000000000702 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000502 /* App Store Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = "App Store Release";
+		};
+		A00000000000000000000503 /* Developer ID Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = "Developer ID Release";
+		};
+		A00000000000000000000504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = APMExplorer/APMExplorer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "APM Explorer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx;
+				PRODUCT_MODULE_NAME = APMExplorer;
+				PRODUCT_NAME = "APM Explorer";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000505 /* App Store Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = APMExplorer/APMExplorer.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "APM Explorer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx;
+				PRODUCT_MODULE_NAME = APMExplorer;
+				PRODUCT_NAME = "APM Explorer";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "APP_STORE $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store Release";
+		};
+		A00000000000000000000506 /* Developer ID Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = APMExplorer/APMExplorer.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "APM Explorer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx;
+				PRODUCT_MODULE_NAME = APMExplorer;
+				PRODUCT_NAME = "APM Explorer";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEVELOPER_ID $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Developer ID Release";
+		};
+		A00000000000000000000507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APM Explorer.app/Contents/MacOS/APM Explorer";
+			};
+			name = Debug;
+		};
+		A00000000000000000000508 /* App Store Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APM Explorer.app/Contents/MacOS/APM Explorer";
+			};
+			name = "App Store Release";
+		};
+		A00000000000000000000509 /* Developer ID Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APM Explorer.app/Contents/MacOS/APM Explorer";
+			};
+			name = "Developer ID Release";
+		};
+		A00000000000000000000510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = APMExplorer;
+			};
+			name = Debug;
+		};
+		A00000000000000000000511 /* App Store Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = APMExplorer;
+			};
+			name = "App Store Release";
+		};
+		A00000000000000000000512 /* Developer ID Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87M55M486F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.horatiu.apmx.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = APMExplorer;
+			};
+			name = "Developer ID Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000601 /* Build configuration list for PBXProject "APMExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000501 /* Debug */,
+				A00000000000000000000502 /* App Store Release */,
+				A00000000000000000000503 /* Developer ID Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Developer ID Release";
+		};
+		A00000000000000000000602 /* Build configuration list for PBXNativeTarget "APMExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000504 /* Debug */,
+				A00000000000000000000505 /* App Store Release */,
+				A00000000000000000000506 /* Developer ID Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Developer ID Release";
+		};
+		A00000000000000000000603 /* Build configuration list for PBXNativeTarget "APMExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000507 /* Debug */,
+				A00000000000000000000508 /* App Store Release */,
+				A00000000000000000000509 /* Developer ID Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Developer ID Release";
+		};
+		A00000000000000000000604 /* Build configuration list for PBXNativeTarget "APMExplorerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000510 /* Debug */,
+				A00000000000000000000511 /* App Store Release */,
+				A00000000000000000000512 /* Developer ID Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Developer ID Release";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A00000000000000000000801 /* XCLocalSwiftPackageReference "APMXCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = APMXCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A00000000000000000000802 /* APMXCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000801 /* XCLocalSwiftPackageReference "APMXCore" */;
+			productName = APMXCore;
+		};
+		A00000000000000000000803 /* APMXCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000801 /* XCLocalSwiftPackageReference "APMXCore" */;
+			productName = APMXCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A00000000000000000000402 /* Project object */;
+}
