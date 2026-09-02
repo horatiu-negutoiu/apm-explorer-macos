@@ -1,0 +1,109 @@
+#!/bin/sh
+set -eu
+
+test_count_file=${APMX_CAPTURE_TEST_COUNT_FILE:?}
+test_time_limit=${APMX_CAPTURE_TEST_TIME_LIMIT:?}
+
+fail() {
+  printf '%s\n' "$1" >&2
+  exit 64
+}
+
+[ "${1:-}" = xctrace ] || fail "expected xctrace"
+shift
+
+case "${1:-}" in
+record)
+  shift
+  [ "${1:-}" = --no-prompt ] || fail "missing --no-prompt"
+  [ "${2:-}" = --template ] || fail "missing --template"
+  template=$3
+  [ "${4:-}" = --time-limit ] || fail "missing --time-limit"
+  [ "${5:-}" = "$test_time_limit" ] || fail "unexpected time limit"
+  [ "${6:-}" = --output ] || fail "missing --output"
+  output=$7
+  [ "${8:-}" = --launch ] || fail "missing --launch"
+  [ "${9:-}" = -- ] || fail "missing launch separator"
+  launch_executable=${10:-}
+  [ "$#" = 10 ] || fail "unexpected record arguments"
+
+  count=$(($(cat "$test_count_file") + 1))
+  printf '%s\n' "$count" > "$test_count_file"
+  case "$count:$template" in
+  1:App\ Launch | 2:Time\ Profiler | 3:Allocations | 4:Data\ Persistence | 5:System\ Trace)
+    ;;
+  *)
+    fail "unexpected template order"
+    ;;
+  esac
+  if [ "${APMX_CAPTURE_TEST_FAIL_AT:-0}" = "$count" ]; then
+    exit 1
+  fi
+  mkdir -p "$output"
+  printf '%s\n' "$launch_executable" > "$output/launch-executable"
+  ;;
+export)
+  shift
+  [ "${1:-}" = --input ] || fail "missing --input"
+  input=$2
+  [ "${3:-}" = --toc ] || fail "missing --toc"
+  [ "${4:-}" = --output ] || fail "missing --output"
+  output=$5
+  [ "$#" = 5 ] || fail "unexpected export arguments"
+  launch_executable=$(cat "$input/launch-executable")
+  case "${APMX_CAPTURE_TEST_TARGET_MODE:-target}" in
+  target)
+    target_info='<process pid="7002"/>'
+    target_path=$launch_executable
+    non_target_path=/nonexistent/non-target
+    process_nodes="<process pid=\"7001\" path=\"$non_target_path\"/>
+<process pid=\"7002\" path=\"$target_path\"/>"
+    ;;
+  non_target_app)
+    target_info='<process pid="7002"/>'
+    target_path=${APMX_CAPTURE_TEST_OTHER_EXECUTABLE:?}
+    non_target_path=$launch_executable
+    process_nodes="<process pid=\"7001\" path=\"$non_target_path\"/>
+<process pid=\"7002\" path=\"$target_path\"/>"
+    ;;
+  missing_pid_linkage)
+    target_info='<process pid="7002"/>'
+    process_nodes="<process pid=\"7001\" path=\"$launch_executable\"/>"
+    ;;
+  duplicate_target_process)
+    target_info='<process pid="7002"/>'
+    process_nodes="<process pid=\"7002\" path=\"$launch_executable\"/>
+<process pid=\"7002\"/>"
+    ;;
+  missing_target_path)
+    target_info='<process pid="7002"/>'
+    process_nodes='<process pid="7002"/>'
+    ;;
+  multiple_target_nodes)
+    target_info='<process pid="7002"/><process pid="7003"/>'
+    process_nodes="<process pid=\"7002\" path=\"$launch_executable\"/>
+<process pid=\"7003\" path=\"$launch_executable\"/>"
+    ;;
+  malformed_xml)
+    printf '<trace-toc><run>' > "$output"
+    exit 0
+    ;;
+  *)
+    fail "unknown target mode"
+    ;;
+  esac
+  printf '%s\n' \
+    '<trace-toc>' \
+    '<run number="1">' \
+    "<info><target>$target_info</target></info>" \
+    '<processes>' \
+    "$process_nodes" \
+    '</processes>' \
+    '</run>' \
+    '</trace-toc>' \
+    > "$output"
+  ;;
+*)
+  fail "unknown xctrace command"
+  ;;
+esac

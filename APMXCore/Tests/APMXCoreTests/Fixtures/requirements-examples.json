@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "metricExamples": [
+    {
+      "name": "requirements-apm-120",
+      "calculation": "apm",
+      "nowMilliseconds": 120000,
+      "sessions": [
+        {
+          "id": "00000000-0000-0000-0000-000000000001",
+          "startedAtMilliseconds": 0,
+          "lastActivityAtMilliseconds": 120000,
+          "endedAtMilliseconds": null,
+          "actionCount": 240,
+          "timeoutMilliseconds": 60000,
+          "endReason": null
+        }
+      ],
+      "expected": 120.0
+    }
+  ]
+}
